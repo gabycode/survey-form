@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Dating Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+      <header>
+      <h1 id="title">Online Dating Survey</h1>
+    <p id="description">Thank you for taking the time to help us research online dating apps to find love</p>
+    </header>
+    
+    <form id="survey-form">
+      <div class="form-i">
+        <label for="name" id="name-label">Name</label>
+      <input 
+             type="text" 
+             name="name" 
+             id="name" 
+             required
+             placeholder="Enter your name"
+             class="form-ii"
+      >
+      </div>
+      
+      <div class="form-i">
+        <label for="email" id="email-label">Email</label>
+      <input 
+             type="email"
+             name="email"
+             id="email"
+             required
+             placeholder="Enter your email"
+             class="form-ii"
+      >
+      </div>
+      
+      <div class="form-i">
+        <label for="number" id="number-label">How many dating apps/sites do you use?</label>
+        <input 
+               type="number"
+               name="number"
+               id="number"
+               placeholder="How many?"
+               class="form-ii"
+               min="1"
+               max="99"
+               required
+        >
+      </div>
+      
+      <div class="form-i">
+        <p>Select the category that includes your age</p>
+        <select name="age" id="dropdown" class="form-ii" required>
+          <option value selected disabled>Please select</option>
+          <option value="18-24">18-24</option>
+          <option value="25-34">25-34</option>
+          <option value="35-44">35-44</option>
+          <option value="45-54">45-54</option>
+          <option value="55-older">55-older</option>
+        </select>
+      </div>
+      
+      <div class="form-i">
+        <p>How many hours do you spend in the dating app/site?</p>
+        <label>
+          <input 
+                 type="radio"
+                 name="hours"
+                 value="less-than-1-hour"
+                 class="radio-input"
+          >Less than 1 hour        
+        </label>
+        <label>
+          <input 
+                 type="radio"
+                 name="hours"
+                 value="2-5"
+                 class="radio-input"
+          >2-5      
+        </label>
+        <label>
+          <input 
+                 type="radio"
+                 name="hours"
+                 value="6-10"
+                 class="radio-input"
+          >6-10        
+        </label>
+        <label>
+          <input 
+                 type="radio"
+                 name="hours"
+                 value="11-15"
+                 class="radio-input"
+          >11-15        
+        </label>
+        <label>
+          <input 
+                 type="radio"
+                 name="hours"
+                 value="over-15-hours"
+                 class="radio-input"
+          >Over 15 hours        
+        </label>
+      </div>
+      
+      <div class="form-i">
+        <p>What qualities are you looking for in a person when surfing on the dating website or app? (check all that apply)</p>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="intelligence"
+          >Intelligence
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="kindness"
+          >Kindness
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="sense-of-humor"
+          >Sense of humor
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="attractiveness"
+          >Attractiveness
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="reliability"
+          >Reliability
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="money"
+          >Money
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="open-communication"
+          >Open communication
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="sensible"
+          >Sensible
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="reckless"
+          >Reckless
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="friendly"
+          >Friendly
+        </label>
+        <label>
+          <input 
+                 type="checkbox"
+                 name="relationship"
+                 class="checkbox-input"
+                 value="maturity"
+          >Maturity
+        </label>
+      </div>
+      
+      <div class="form-i">
+        <p>Any comments or suggestions?</p>
+        <textarea 
+                  name="comments" 
+                  id="comments" 
+                  class="text-area"
+                  placeholder="Enter your comment or suggestion here..."
+        ></textarea>
+      </div>
+      
+      <div class="form-i">
+        <button type="submit" class="submit" id="submit">Submit</button>
+      </div>
+      
+    </form>
+    </main>
+    
+  </body>
